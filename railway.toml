@@ -1,6 +1,0 @@
-[build]
-builder = "nixpacks"
-
-[deploy]
-startCommand = "python highfollow_bot.py"
-restartPolicyType = "always"
