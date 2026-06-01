@@ -1,0 +1,13 @@
+name: ankush-high-follow-bot
+services:
+  - name: bot
+    type: worker
+    git:
+      branch: main
+    build:
+      command: pip install -r requirements.txt
+    run:
+      command: python highfollow_bot.py
+    env:
+      - key: BOT_TOKEN_2
+        value: YOUR_BOT_TOKEN_HERE
